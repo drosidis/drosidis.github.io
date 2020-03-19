@@ -1,0 +1,38 @@
+---
+---
+
+@import "minima";
+
+// ------------------------- Typography
+
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+// ------------------------- List of blogs
+.post-list {
+
+  h3 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 36px;
+    margin-bottom: 0.5rem;
+  }
+
+  .dro-post-container {
+    display: flex;
+  }
+
+  .dro-post-container > img {
+    width: 20em;
+    margin-right: 1em;
+  }
+
+  .dro-post-container > div {
+    text-align: justify;
+  }
+
+}

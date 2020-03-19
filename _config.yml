@@ -18,9 +18,8 @@ email: yannis@drosidis.com
 description: >- # this means to ignore newlines until "baseurl:"
   Software Engineer, CTO, Founder
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
+url: "https://drosidis.com"
+github_username:  drosidis
 
 # Build settings
 markdown: kramdown
