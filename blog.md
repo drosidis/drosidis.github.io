@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="dro-blog-posts">
+<div>
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -21,14 +21,12 @@ layout: default
       {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
       {%- for post in posts -%}
       <li>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          <span class="post-meta">
-            {{ post.date | date: date_format }}
-          </span>
-        </h3>
+        <div class="dro-title">
+          <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+          <div class="post-meta">{{ post.date | date: date_format }}</div>
+        </div>
         <div class="dro-post-container">
-          <img src="{{post.image}}">
+          <div class="img"><img src="{{post.image}}"></div>
           <div>
             <div class="text-justify">{{ post.excerpt }}</div>
             <div class="text-right mt-3"><a href="{{ post.url | relative_url }}">Read more &#x203A;</a></div>
