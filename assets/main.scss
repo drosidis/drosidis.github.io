@@ -11,6 +11,12 @@
 
 .mt-3 { margin-top: 1rem; }
 
+p { text-align: left; }
+
+@media only screen and (min-width: 550px) {
+  p { text-align: justify; }
+}
+
 // ------------------------- Page header
 
 div.dro-header {
@@ -59,6 +65,39 @@ div.dro-header {
   }
 }
 
+// ------------------------- Home page
+
+@media only screen and (min-width: 550px) {
+  .dro-intro {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    img { height: 200px; }
+
+    .dro-right-col {
+      // margin-left:2em;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        font-size:50px;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .dro-contact {
+    & a { margin-left: 1.5rem; }
+    & a:hover { margin-left: 1.5rem; text-decoration: none; }
+    & svg { transform: scale(2.5); }
+  }
+}
+
 // ------------------------- List of blogs
 .post-list {
 
@@ -84,12 +123,13 @@ div.dro-header {
 
     .dro-post-container {
       display: flex;
+      flex-direction: row-reverse;
     }
 
     .dro-post-container > div.img {
       width: 180px;
       min-width: 180px;
-      margin-right: 1em;
+      margin-left: 1em;
     }
   }
 
@@ -101,7 +141,35 @@ div.dro-header {
   }
 }
 
-// ------------------------- Blog post
-.post p {
-  text-align: justify;
+// ------------------------- Social media links
+
+.dro-social.large .fab, .dro-social.large .fas {
+  font-size: 40px;
+  margin: 0 0.5rem 0 0;
+}
+
+.dro-social {
+  a .fab, a:active .fab, a:visited .fab,
+  a .fas, a:active .fas, a:visited .fas {
+    color: #666;
+  }
+
+  a:hover .fab, a:hover .fas { color: #2a7ae2; }
+}
+
+.dro-social .fab, .dro-social .fas {
+  font-size: 30px;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .dro-social .fab, .dro-social .fas {
+    margin: 0 0 0 0.5rem;
+  }
+}
+
+// ------------------------- Social media links
+footer .dro-footer-cols {
+  display: flex;
+  justify-content: space-between;
 }
