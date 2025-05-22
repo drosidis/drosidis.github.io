@@ -1,0 +1,82 @@
+/* ---------- Page layout & typography---------- */
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+.container {
+  max-width: 740px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- About me ---------- */
+header.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+header.profile .headshot {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header.profile .headshot img {
+  width: 250px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+header.profile .info h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+header.profile .info p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+@media (min-width: 700px) {
+  header.profile {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .profile-image {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ---------- Links ---------- */
+
+.social-link {
+  margin: 1rem 0;
+}
+
+.social-link a, .social-link a:visited, .social-link a:active, .social-link a:hover {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #666;
+}
+
+.social-link a:hover {
+  color: #2a7ae2;
+}
+
+.social-link i {
+  margin-right: 0.5rem;
+  font-size: 2.5em;
+  line-height: 1;
+}
