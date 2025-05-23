@@ -37,7 +37,7 @@ header.profile .info h1 {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -60,6 +60,16 @@ header.profile .info p {
 
 /* ---------- Links ---------- */
 
+a, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: #2567d0;
+}
+
+a:hover {
+  color: #2a7ae2;
+}
+
+/* ---------- Links with icons ---------- */
 .social-link {
   margin: 1rem 0;
 }
